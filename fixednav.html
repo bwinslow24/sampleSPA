@@ -11,15 +11,17 @@
 	<div id="fixednav" class="fixednav">
 		<ul class="nav">
 			<li class="nav-item"><a href="#home_ref">Home</a></li>
-			<li class="nav-item"><a href="#aboutme_ref">About Me</a></li>
-			<li class="nav-item"><a href="#top_ref">Top 5's</a></li>
-			<li class="nav-item"><a href="#projects_ref">Projects</a></li>
+			<li class="nav-item"><a id="example-nav">Examples  <i class="fa fa-caret-down icon" aria-hidden="true"></i></a>
+				<ul class="dropdown">
+					<li class="dropdown-item"><a href="#ex1">Example I</a></li>
+					<li class="dropdown-item"><a href="#ex2">Example II</a></li>
+				</ul>
+			</li>
 			<li class="mobile-menu"><a id="menu-icon"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
-				<ul class="mobile-nav">
+				<ul class="mobile-dropdown">
 					<li class="mobile-nav-item"><a href="#home_ref">Home</a></li>
-					<li class="mobile-nav-item"><a href="#aboutme_ref">About Me</a></li>
-					<li class="mobile-nav-item"><a href="#top_ref">Top 5's</a></li>
-					<li class="mobile-nav-item"><a href="#projects_ref">Projects</a></li>
+					<li class="mobile-nav-item"><a href="#ex1">Example I</a></li>
+					<li class="mobile-nav-item"><a href="#ex2">Example II</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -27,31 +29,100 @@
 	<a id="home_ref"></a>
 	<div id="home" class="section">
 		<div class="section-content">
-			<h1>Brandon Winslow</h1>
-			<a href="#aboutme_ref">
+			<div class="fancy">
+				<span>Examples</span>
+			</div>
+			<a href="#ex1">
 				<div id="explore" class="explore">
-					<p>Learn More</p>
-					<i class="fa fa-angle-double-down fa-4x explore-icon" aria-hidden="true"></i>
+					<i class="fa fa-angle-double-down fa-5x explore-icon" aria-hidden="true"></i>
 				</div>
 			</a>
 		</div>
 	</div>
-	<a id="aboutme_ref"></a>
-	<div id="aboutme" class="section">
+	<a id="ex1"></a>
+	<div id="example1" class="title">
 		<div class="section-content">
-			<h1>About Me</h1>
+			<div class="fancy">
+				<span>Credit Card Mask</span>
+			</div>
+			<div class="description">
+				<b>Usually when you buy something, you're asked whether your credit card number, phone number or answer to your most secret question is still correct. However, since someone could look over your shoulder, you don't want that shown on your screen. Instead, we mask it.<br><br>
+
+				Your task is to write a function maskify, which changes all but the last four characters into '#'.</b>
+			</div>
 		</div>
 	</div>
-	<a id="top_ref"></a>
-	<div id="top" class="section">
-		<div class="section-content">
-			<h1>Top 5's</h1>
+	<div class="title">
+		<div class="code">
+			<div class="example">
+				<pre class="brush: js">
+					function digital_root(n) {
+					  var s = String(n);
+					  if (s.length == 1){
+					    return n;
+					  }
+					  else{
+					    var total = 0;
+					    for (var i in s){
+					      total += Number(s[i]);
+					    }
+					   
+					    return digital_root(total);
+					  }
+					}
+				</pre>
+			</div>
+			<div class="results">
+				<h1>RESULTS GO HERE</h1>
+				<h1>RESULTS GO HERE</h1>
+				<h1>RESULTS GO HERE</h1>
+				<h1>RESULTS GO HERE</h1>
+				<h1>RESULTS GO HERE</h1>
+				<h1>RESULTS GO HERE</h1>
+			</div>
 		</div>
 	</div>
-	<a id="projects_ref"></a>
-	<div id="projects" class="section">
+	<a id="ex2"></a>
+	<div id="example2" class="title">
 		<div class="section-content">
-			<h1>Projects</h1>
+			<div class="fancy">
+				<span>Credit Card Mask</span>
+			</div>
+			<div class="description">
+				<b>Usually when you buy something, you're asked whether your credit card number, phone number or answer to your most secret question is still correct. However, since someone could look over your shoulder, you don't want that shown on your screen. Instead, we mask it.<br><br>
+
+				Your task is to write a function maskify, which changes all but the last four characters into '#'.</b>
+			</div>
+		</div>
+	</div>
+	<div class="title">
+		<div class="code">
+			<div class="example">
+				<pre class="brush: js">
+					function digital_root(n) {
+					  var s = String(n);
+					  if (s.length == 1){
+					    return n;
+					  }
+					  else{
+					    var total = 0;
+					    for (var i in s){
+					      total += Number(s[i]);
+					    }
+					   
+					    return digital_root(total);
+					  }
+					}
+				</pre>
+			</div>
+			<div class="results">
+				<h1>RESULTS GO HERE</h1>
+				<h1>RESULTS GO HERE</h1>
+				<h1>RESULTS GO HERE</h1>
+				<h1>RESULTS GO HERE</h1>
+				<h1>RESULTS GO HERE</h1>
+				<h1>RESULTS GO HERE</h1>
+			</div>
 		</div>
 	</div>
 	<div id="footer" class="footer">

@@ -3,7 +3,7 @@ body{
 	margin: 0;
 	padding: 0;
 	background: no-repeat fixed center;
-	background-image: url(./background.jpg);
+	/*background-image: url(./background.jpg);*/
 }
 
 /* -------------------fixed navbar------------------ */
@@ -43,11 +43,12 @@ body{
 
 .mobile-menu {
 	display: none;
-	position: absolute;
-	padding: 10px;
+/*	position: absolute;
+*/	padding: 10px;
 	color: white;
+
 }
-.mobile-nav {
+/*.mobile-nav {
 	display: none;
 	position: relative;
 	list-style-type: none;
@@ -58,6 +59,23 @@ body{
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .3);
 	border: .5px solid black;
 	border-radius: 0 0 1px 1px;
+	left:0;
+
+}*/
+
+.mobile-dropdown{
+	display: none;
+	position: absolute;
+	list-style-type: none;
+	padding: 0;
+	margin-top: 10px;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+	border-right: .5px solid black
+	border-radius: 0 0 2px 2px; 
+	box-shadow: -10px 0 10px -5px rgba(0, 0, 0, .3) inset;
+	left: 0;
 
 }
 
@@ -77,12 +95,36 @@ body{
 	color: white; 
 }
 
+.icon{
+	vertical-align: bottom;
+}
 
+/*--------------------dropdown------------------*/
+
+.dropdown{
+	display: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background-color: white;
+	position: fixed;
+	border: .5px solid rgb(0,0,.3);
+	border-radius: 0 0 2px 2px; 
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .3);
+}
+
+.dropdown-item a{
+	color: black;
+}
+
+.dropdown-item a:hover{
+	color: white;
+}
 
 /* -------------------footer----------------- */
 
 .footer{
-	position: fixed;
+	position: relative;
     bottom: 0;
     width: 100%;
     background-color: #414247;
@@ -93,17 +135,20 @@ body{
 
 .section{
 	position: relative;
+	display: inline-block;
 	text-align: center;
 	width: 100%;
 	height: 100vh;
     overflow-x: hidden;  /*Disable horizontal scroll */
+    overflow-y: hidden;
 
 }
+
 
 .section-content{
 	position: relative;
 	text-align: center;
-	top: 45%;
+	top: 10%;
 }
 
 .section-content a:visited{
@@ -113,30 +158,125 @@ body{
 
 .explore{
 	text-decoration: none;
-	display: inline-block;
+	color: black;
+	font-size: 20px;
+	padding: 5%
+
+
+}
+
+.explore p{
+	margin: 10px 0 0 0;
 }
 
 .explore-icon{
+	position: relative;
+	margin: 0;
 	-webkit-animation-name: bounce; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
     animation-name: bounce;
     animation-duration: 5s;
-    animation-iteration-count: infinite;    
+    animation-iteration-count: infinite;  
 }
 
-#home .section{
+.section{
 /*	background: no-repeat fixed center;
-*/	background-image: url(./background.jpg);
+*/background-color: #F3F5F6
 }
 
-#aboutme {
+#home .section-content{
+	top: 45%;
+}
+
+#home .section-content h1{
+	font-size: 60px;
+}
+
+#example1 {
 	background-color: #14bee0;
 }
 
-#projects {
+#example1 .section-content{
+	text-align: left;
+}
+
+#example2 {
 	background-color: #14bee0;
 }
 
+#example2 .section-content{
+	text-align: left;
+}
+
+.well {
+	font-family: Helvetica, sans-serif;
+	background-color: rgba(229, 229, 229, .5);
+	display: inline-block;
+	border-radius:5px;
+	padding: 10px 50px;
+/*	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .3);
+*/	box-shadow: -10px -10px 10px -5px rgba(0, 0, 0, .3) inset;
+}
+
+.fancy{
+	width: 100%; 
+	height: 10px; 
+	border-bottom: 80px solid rgba(106, 209, 69, 1); 
+	text-align: center
+}
+
+.fancy span{
+	font-size: 80px; 
+	background-color: #F3F5F6; 
+	padding: 10px 10px;
+	border-radius:5px;
+	/*box-shadow: -10px -10px 10px -5px rgba(0, 0, 0, .3) inset;*/
+
+}
+
+#example1 .fancy{
+	border-bottom: 80px solid rgba(106, 209, 69, 1); 
+	text-align: left;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#example2 .fancy{
+	border-bottom: 80px solid rgba(106, 209, 69, 1); 
+	text-align: left;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.description{
+	position: relative;
+	display: block;
+	padding: 50px 50px;
+	color: #eaecef;
+	font-family: sans-serif;
+}
+.title{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+    overflow-x: hidden;  /*Disable horizontal scroll */
+    overflow-y: hidden;
+
+}
+.example{
+	width: 50%; 
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid black;
+}
+
+.results{
+	display: inline-block;
+	margin: 10px;
+
+
+}
 /* -------------------Animation-------------------- */
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes bounce {
@@ -200,6 +340,9 @@ body{
 
     .mobile-menu{
     	display: block;
+    }
+    #example1 .fancy{
+    	margin-bottom: 60px;
     }
 }
 
