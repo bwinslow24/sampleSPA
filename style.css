@@ -149,6 +149,7 @@ body{
 	position: relative;
 	text-align: center;
 	top: 10%;
+	padding: 10px;
 }
 
 .section-content a:visited{
@@ -201,7 +202,7 @@ body{
 }
 
 #example2 {
-	background-color: #14bee0;
+	background-color: #F3F5F6;
 }
 
 #example2 .section-content{
@@ -253,6 +254,11 @@ body{
 	padding: 50px 50px;
 	color: #eaecef;
 	font-family: sans-serif;
+	font-size: 25px;
+}
+
+#example2 .description{
+	color: black;
 }
 .title{
 	position: relative;
